@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div class="container">
+        <h1>TO DO LIST</h1>
+        <div class="add">
+            <input type="text" class="name" placeholder="task name">
+            <div class="Taskpriority">
+                <div onclick="down(this)" class="task">task ↓</div>
+            <div class="checked">
+            <input onclick="onlyOne(this)" type="checkbox" name="check" id="easy">easy</input>
+            <input onclick="onlyOne(this)" type="checkbox" name="check" id="medium">medium</input>
+            <input onclick="onlyOne(this)" type="checkbox" name="check" id="hard">hard</input>
+        </div>
+        </div>
+        </div>
+        <input class="done" type="submit" onclick="submit()">
+    </div>
+    <div class="tasks">
+        <table>
+            <tr>
+                <th>name</th>
+                <th>priority</th>
+            </tr>
+            <tbody id="tbody" >
+            </tbody>
+        </table>
+    </div>
+    <script src="task2.js" ></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+*{
+    color: aliceblue;
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: rgb(54, 52, 52);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 25%;
+    align-items: center;
+    margin: 50px;
+}
+.add{
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    align-items: center;
+}
+.name{
+    width: 350px;
+    height: 20px;
+    background: black;
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    outline: none;
+}
+.name:focus{
+    transform: scale(1.1);
+}
+.checked{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    right: 285px;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.done{
+    width:20% ;
+    height: 20px;
+    background: black;
+    margin-top:20px ;
+    transition: 0.5s;
+}
+.task{
+    cursor: pointer;
+}
+table{
+    width: 460px;
+    text-align: center;
+}
+button{
+    background: red;
+    position: relative;
+    top: -20px;
+    right: -110px;
+}
+
+
+
